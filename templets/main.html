@@ -1,0 +1,116 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color navbar sticky-top">
+    <a class="navbar-brand" href="#"><span><img src="../img/logo.png" width="30px" height="35px" alt=""></span> WEEKO STORE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" ui-sref="app.home"><i class="fa fa-home"></i> HOME
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-effect waves-light">
+          <a class="nav-link" ui-sref="app.store"><i class="fa fa-shopping-cart"></i> STORE</a>
+        </li>
+        <li class="nav-item waves-effect waves-light">
+          <a class="nav-link" ui-sref="app.contact"><i class="fa fa-user"></i> CONTACT US</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fa fa-shopping-cart text-light"></i> <span class="badge badge-success">{{card}}</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+
+  <div ui-view="sub"></div>
+
+
+
+  <!-- footer section is here -->
+
+
+  <!-- Footer -->
+<footer class="page-footer default-color font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold text-center">Quote</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+            repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+            harum esse fugiat. Itaque, culpa?</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+      <h2 class="text-center">Tell as your Suggestion</h2>
+          
+          <!-- Material input -->
+<div class="md-form">
+  <input type="text" id="form1" class="form-control">
+  <label for="form1">YOUR MESSAGE</label>
+</div>
+
+          <button class="btn btn-success font-weight-bold"><i class="fa fa-envelope"></i> SEND message</button>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">WEEKO STORE</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->

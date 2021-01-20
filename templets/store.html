@@ -1,0 +1,219 @@
+<!-- News jumbotron -->
+<div class="jumbotron text-center hoverable p-4">
+
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-md-4 offset-md-1 mx-3 my-3 wow animate__animated animate__fadeInUp animate__delay-1s">
+  
+        <!-- Featured image -->
+        <div class="view overlay">
+          <img src="../img/10.jpg" class="img-fluid store-img" alt="Sample image for first version of blog listing">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-7 text-md-left ml-3 mt-3 wow animate__animated animate__fadeInUp animate__delay-1s">
+  
+
+        <h2 class="h2 mb-4 text-danger text-center">GET 20% ON OUR OFFERS</h2>
+  
+        <p class="font-weight-normal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
+          rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+  <div class="text-center">
+        <a class="btn btn-success text-center font-weight-bold"><i class="fa fa-shopping-cart"></i> Take it</a>
+  </div>
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+  </div>
+  <!-- News jumbotron -->
+
+
+
+
+
+
+  <!-- store section -->
+
+  <section class="container-fluid store mt-4">
+    <h2 class="text-center wow animate__animated animate__fadeInUp animate__delay-1s"><span class="our">ALL</span> PRODUCT</h2>
+      <div class="row">
+          <div class="col-md-2 col-xs-12 col-sm-4">
+
+            <div class="accordion wow animate__animated animate__fadeInUp animate__delay-1s" id="accordionExample275">
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingOne2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne2"
+                      aria-expanded="true" aria-controls="collapseOne2">
+                      CONDITION
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
+                  data-parent="#accordionExample275">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">NEW</li>
+                      <li class="list-group-item">USED</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingTwo2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                        PRICE
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+                  data-parent="#accordionExample275">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">100 - 700</li>
+                      <li class="list-group-item">700 - 1000</li>
+                      <li class="list-group-item">1000 - 3000</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingThree2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                      TYPE
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2"
+                  data-parent="#accordionExample275">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">PHONE</li>
+                      <li class="list-group-item">TABLET</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-10 col-sm-8 col-xs-12">
+            
+            <ul class="nav nav-tabs wow animate__animated animate__fadeInUp animate__delay-1s" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active text-dark" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true" ng-click="ev($event)">NEW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                    aria-selected="false" ng-click="ev($event)">USED</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="container-fluid">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 wow animate__animated animate__fadeInUp animate__delay-1s" ng-repeat="moste in store[0]">
+                        <div class="card">
+
+                          <!-- Card image -->
+                          <div class="view overlay">
+                            <img class="card-img-top"src="{{moste.img}}"
+                              alt="Card image cap">
+                            <a href="#!" ng-click="ev($event)" >
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                        
+                          <!-- Card content -->
+                          <div class="card-body">
+                        
+                            <!-- Title -->
+                            <h4 class="card-title">{{moste.name}}</h4>
+                            <!-- Text -->
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, culpa.</p>
+                            <p class="card-text text-primary text-dark">{{moste.price|currency}}</p>
+                            <!-- Button -->
+                            
+                            <a href="#"  ng-click="cardP(); ev($event)"  class="btn btn-success "><i class="fa fa-shopping-cart"></i> BUY</a>
+                            </span><span class="fa fa-heart float-rigth {{animate}}" ng-click="inc($index)"></span>
+                            <span class="{{animate}} {{delAni}} te">{{moste.like}}</span>
+                        
+                            <span class="fa fa-trash-alt float-rigth {{delAni}}" ng-click="mini($index)"></span>
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                   
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                  <div class="container-fluid">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 wow animate__animated animate__fadeInUp animate__delay-1s" ng-repeat="moste in store[1]">
+                        <div class="card">
+                
+                          <!-- Card image -->
+                          <div class="view overlay">
+                            <img class="card-img-top" src="{{moste.img}}"
+                              alt="Card image cap">
+                            <a href="#!"  ng-click="ev($event)" >
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                        
+                          <!-- Card content -->
+                          <div class="card-body">
+                        
+                            <!-- Title -->
+                            <h4 class="card-title">{{moste.name}}</h4>
+                            <!-- Text -->
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, culpa.</p>
+                            <p class="card-text text-primary text-dark">{{moste.price|currency}}</p>
+                            <!-- Button -->
+                            
+                            <a href="#" ng-click="cardP()ev($event)" class="btn btn-success "><i class="fa fa-shopping-cart"></i> BUY</a>
+                            </span><span class="fa fa-heart float-rigth {{animate}}" ng-click="inc($index)"></span>
+                            <span class="text-default">{{moste.like}}</span>
+                        
+                            <span class="fa fa-trash-alt float-rigth {{delAni}}" ng-click="mini($index)"></span>
+                          </div>
+                        
+                        </div>
+                      </div>
+                
+                    </div>
+                  </div>
+
+
+
+                </div>
+                           </div>
+          </div>
+      </div>
+  </section>
