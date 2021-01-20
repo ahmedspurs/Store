@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+nav{
+    background-color: rgb(36, 182, 133);
+}
+
+nav a.navbar-brand{
+    font-weight: 600;
+}
+
+nav ul li a{
+    font-weight: 600;
+}
+
+
+/* carousel */
+
+.carousel{
+    margin-top: -10px;
+}
+
+.carousel .carousel-inner .carousel-item img{
+    height: 500px;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h3
+
+{
+    font-weight: 600;
+}
+
+
+/* service section */
+
+section.ser{
+    padding: 20px;
+}
+
+section.ser .card{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.our{
+    border-bottom: 2px solid #2BBBAD;
+    padding: 5px;
+}
+
+
+section.ser .ser-icon span{
+    color: white;
+    background-color: #2BBBAD;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 10px 0px ;
+}
+
+section.ser .card h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #2BBBAD;
+}
+
+
+/*  */
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+}
+
+.card .card-body a.btn{
+    padding: 10px 20px;
+    border-radius: 700px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card .card-body span.fa{
+    color: #2BBBAD;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .2s;
+    /* float: right; */
+}
+
+.card .card-body span.fa:hover{
+font-size: 20px;
+}
+
+
+.card .card-body span.te{
+    color: #2BBBAD;
+}
+
+.card .card-body span.fa:last-child{
+    /* margin: 10px; */
+}
+
+
+/* store */
+
+.jumbotron{
+    overflow: hidden;
+}
+
+.jumbotron img.store-img{
+    height: 200px;
+    width: 400px;
+}
+.jumbotron a.btn{
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+
+/* accordion */
+
+
+.accordion{
+    background-color: #2BBBAD;
+    border-radius: 10x;
+    border: none;
+}
+
+
+.accordion .card{
+    background-color: #2BBBAD;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    margin: 0;
+}
+
+.accordion .card .card-header h5 button{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.accordion .card .card-body ul li{
+    background-color: #2BBBAD;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+    /* margin: 0; */
+    width: 100%;
+}
+.accordion .card .card-body ul li:hover{
+    background-color: rgb(29, 216, 197);
+}
+
+
+/* team */
+
+.team .team-section .avatar img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.bg{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(8, 10, 10, 0.287);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
